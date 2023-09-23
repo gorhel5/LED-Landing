@@ -1,0 +1,11 @@
+body {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    background-color: #333;
+}
+
+.wrapper {
+    max-width: 470px;
+    margin: 0 auto;
+    background-color: white;
+}
