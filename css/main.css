@@ -1,11 +1,55 @@
+:root {
+    --text-color: #333746;
+    --page-bg: #393d46;
+    --accent: #F6AC38;
+}
+
 body {
     font-family: 'Proxima Nova';
     font-weight: 400;
-    background-color: #333;
+    background-color: #2a2d32;
+    color: var(--text-color);
 }
 
 .wrapper {
-    max-width: 470px;
+    max-width: 480px;
     margin: 0 auto;
     background-color: white;
+}
+
+.header {
+    
+}
+.header__top {
+    background: white;
+    padding: 5px 0;
+    
+}
+.header__top-text {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.header__main {
+    text-align: center;
+    padding: 8px 30px;
+    height: 1000px;
+    background-color: var(--page-bg);
+}
+.header__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    line-height: 140%;
+    font-family: 'Acrom', sans-serif;
+    font-weight: 600;
+}
+
+.header__title em {
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
 }
