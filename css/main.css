@@ -1,7 +1,9 @@
 :root {
     --text-color: #333746;
     --page-bg: #393d46;
+    --page-bg-light: #f9f9f9;
     --accent: #F6AC38;
+    --accent-dark: #e89e2c;
 }
 
 body {
@@ -10,6 +12,8 @@ body {
     background-color: #2a2d32;
     color: var(--text-color);
 }
+
+/* ---------- GENERAL ---------- */
 
 .container {
     padding: 0 30px;
@@ -21,9 +25,45 @@ body {
     background-color: white;
 }
 
-.header {
-    
+.btn {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 26px;
+    color: var(--text-color);
+    font-family: 'Acrom', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 35px;
+
+
+    background: rgb(239,227,86);
+    background: linear-gradient(180deg, rgba(239,227,86,1) 0%, rgba(239,227,86,1) 1%, rgba(253,174,49,1) 100%);
+
+    box-shadow: 0px 3px 0px 0px rgba(220,161,47,1);
+    text-shadow: 0px 2px 0px rgb(239,227,86) ;
 }
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.title-2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 35px;
+}
+
+.title-2 em {
+    color: var(--accent-dark);
+    font-style: normal;
+}
+
+/* ---------- HEADER ---------- */
+
+/* ---------- HEADER TOP ---------- */
+
 .header__top {
     background: white;
     padding: 5px 0;
@@ -37,6 +77,8 @@ body {
     text-transform: uppercase;
     color: var(--text-color);
 }
+
+/* ---------- HEADER MAIN ---------- */
 
 .header__main {
     position: relative;
@@ -61,6 +103,8 @@ body {
     font-style: normal;
 }
 
+/* ---------- HEADER PRICE ---------- */
+
 .header__price {
     position: absolute;
     width: 90%;
@@ -69,13 +113,26 @@ body {
     z-index: 1;
 }
 
+/* ---------- HEADER INFO ---------- */
+
 .header__info {
+    position: relative;
     display: flex;
+    justify-content: space-evenly;
     text-align: center;
     color: white;
     font-size: 18px;
+    margin-top: -20px;
+    z-index: 9;
 }
 .header__info-block {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 10px;
+
+   width: 140px;
 
 }
 .header__info-circle {
@@ -83,12 +140,127 @@ body {
     height: 30px;
     background-color: var(--accent);
     border-radius: 50%;
-    display: flex;
-    justify-content: end;
+    position: relative;
 }
 
+
 .header__info-circle img {
-    width: 40px;
+    position: absolute;
+    top: 4px;
+    left: 3px;
 }
-.header__info-text {
+
+/* ---------- HEADER BUTTON ---------- */
+
+.header__button {
+   padding: 50px 0 30px;
+}
+
+/* ---------- REVIEW ---------- */
+
+.review {
+    padding: 35px 0;
+    background-color: var(--page-bg-light);
+}
+
+
+
+.review__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 90px;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.videos__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+    margin-bottom: 15px;
+}
+.review__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.review__block p {
+    text-align: justify;
+
+}
+
+/* ---------- ADVANTAGES ---------- */
+
+.advantages {
+    padding: 35px 0;
+    background-color: var(--page-bg);
+    color: white;
+}
+
+.advantages__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 24px;
+
+    margin-bottom: 40px;
+}
+.advantages__card {
+    display: flex;
+
+    border-radius: 35px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.advantages__text {
+    padding: 15px 0 0 8px;
+}
+.advantages__text:hover,
+.advantages__title:hover {
+    text-decoration: underline;
+}
+
+.advantages__text b {
+    font-size: 18px;
+}
+
+.advantages__card-left {
+    padding: 0 0 5px 15px;
+}
+
+/* ---------- CHARACTERISTIC ---------- */
+
+.characteristic {
+    padding: 35px 0;
+    background-color: var(--page-bg);
+    color: white;
+    font-size: 18px;
+}
+
+.characteristic__nh {
+    padding-top: 30px;
+}
+
+.characteristic__info {
+    display: grid;
+    grid-template-columns: 0.36fr 0.66fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+
+.characteristic__info div:hover {
+    text-decoration: underline;
+}
+
+/* ---------- BUTTON ---------- */
+
+.button {
+    padding: 25px 0;
+    background-color: #2f3340;
 }

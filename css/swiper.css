@@ -1,11 +1,11 @@
+/* ---------- SWIPER ---------- */
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    color: var(--accent);
+    color: var(--accent-dark);
 }
 
 .swiper-miniature {
-    /* height: 20%; */
-    /* box-sizing: border-box; */
     padding: 85px 5px 0;
     background-color: var(--page-bg);
 }
