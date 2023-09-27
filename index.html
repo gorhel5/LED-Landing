@@ -17,6 +17,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+
 </head>
 <body>
     
@@ -26,10 +29,69 @@
                 <p class="header__top-text">на другий ліхтарик знижка - 50 грн</p>
             </div>
             <div class="header__main">
-                <h1 class="header__title">акумуляторний <em> LED ліхтарик </em>з 7 режимами</h1>
+                <div class="heaeder__title">
+                    <div class="container">
+                        <h1 class="header__title-text">акумуляторний <em> LED ліхтарик </em>з 7 режимами</h1>
+                    </div>      
+                </div>
+                <div class="header__sliders">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./img/01.jpeg" alt="Slide1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/02.jpeg" alt="Slide1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/03.jpeg" alt="Slide1">
+                            </div>
+                            
+                        </div>
+                       
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                                           
+                    </div>
+        
+                    <div class="swiper-miniature">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide swiper-miniature-slide">
+                                <img src="./img/01.jpeg" alt="Slide1">
+                            </div>
+                            <div class="swiper-slide swiper-miniature-slide">
+                                <img src="./img/02.jpeg" alt="Slide1">
+                            </div>
+                            <div class="swiper-slide swiper-miniature-slide">
+                                <img src="./img/03.jpeg" alt="Slide1">
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class="header__price">
+                    <img src="./img/price.png" alt="">
+                </div>
+                <div class="header__info">
+                    <div class="header__info-block">
+                        <div class="header__info-circle">
+                            <img src="./img/done.svg" alt="">
+                        </div>
+                        <p class="header__info-text">Час автономної роботи: до 4 годин</p>
+                    </div>
+                </div>
             </div>
+            
+ 
         </header>
     </div>
     
+    <script src="./js/Swiper.js" type="module"></script>
 </body>
 </html>

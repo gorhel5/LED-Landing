@@ -11,6 +11,10 @@ body {
     color: var(--text-color);
 }
 
+.container {
+    padding: 0 30px;
+}
+
 .wrapper {
     max-width: 480px;
     margin: 0 auto;
@@ -35,12 +39,13 @@ body {
 }
 
 .header__main {
+    position: relative;
+    padding-top: 10px;
     text-align: center;
-    padding: 8px 30px;
-    height: 1000px;
     background-color: var(--page-bg);
 }
-.header__title {
+
+.header__title-text {
     font-size: 24px;
     font-weight: 600;
     color: var(--accent);
@@ -50,8 +55,40 @@ body {
     font-weight: 600;
 }
 
-.header__title em {
+.header__title-text em {
     color: white;
     text-transform: uppercase;
     font-style: normal;
+}
+
+.header__price {
+    position: absolute;
+    width: 90%;
+    top: 540px;
+    left: 25px;
+    z-index: 1;
+}
+
+.header__info {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.header__info-block {
+
+}
+.header__info-circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.header__info-circle img {
+    width: 40px;
+}
+.header__info-text {
 }
