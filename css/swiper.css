@@ -5,8 +5,8 @@
     color: var(--accent-dark);
 }
 
-.swiper-miniature {
-    padding: 85px 5px 0;
+.swiper-miniature{
+    padding: 0px 5px 0;
     background-color: var(--page-bg);
 }
 
