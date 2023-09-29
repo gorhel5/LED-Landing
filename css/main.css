@@ -559,3 +559,20 @@ select {
 .footer__icons img{
   width: 30px;
 }
+
+
+/* ---------- MEDIA ---------- */
+
+@media (max-width: 430px) {
+    .header__main {
+        padding-top: 5px;
+    }
+
+    .header__top-text {
+        font-size: 14px;
+    }
+
+    .header__title-text {
+        font-size: 19px;
+    }
+}
