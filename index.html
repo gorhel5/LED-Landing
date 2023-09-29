@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="header__sliders">
-                    <div class="swiper">
+                    <div class="swiper swiper1">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
@@ -72,7 +72,7 @@
                                <div class="header__price-right">
                                     <p>Ціна сьогодні:</p>
                                     <div class="price__block">
-                                        <p class="price-text price-text_right">549</p>
+                                        <p class="price-text price-text_right price">549</p>
                                         <p><uah>грн</uah> </p>
                                     </div>
                                     
@@ -390,8 +390,133 @@
                 </div>
             </section>
 
+            <section class="second-slider header">
+
+                <div class="header__top">
+                    <p class="header__top-text">на другий ліхтарик знижка - 50 грн</p>
+                </div>
+    
+                <div class="header__main">
+    
+                    <div class="heaeder__title">
+                        <div class="container">
+                            <h1 class="header__title-text">акумуляторний <em> LED ліхтарик </em>з 7 режимами</h1>
+                        </div>      
+                    </div>
+    
+                    <div class="header__sliders">
+                        <div class="swiper swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/01.jpeg" alt="Slide1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/02.jpeg" alt="Slide1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/03.jpeg" alt="Slide1">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>                      
+                        </div>
+
+                        <div class="header__banner">
+                            <div class="container">
+                                <div class="header__price">
+                                    <div class="header__price-left">
+                                        <p>Звичайна ціна:</p>
+                                        <p class="price-text"><s>749</s><span>грн</span></p>
+                                   </div>
+                                   <div class="header__price-right">
+                                        <p>Ціна сьогодні:</p>
+                                        <div class="price__block">
+                                            <p class="price-text price-text_right">549</p>
+                                            <p><uah>грн</uah> </p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-miniature-2">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide swiper-miniature-slide">
+                                    <img src="./img/01.jpeg" alt="Slide1">
+                                </div>
+                                <div class="swiper-slide swiper-miniature-slide">
+                                    <img src="./img/02.jpeg" alt="Slide1">
+                                </div>
+                                <div class="swiper-slide swiper-miniature-slide">
+                                    <img src="./img/03.jpeg" alt="Slide1">
+                                </div>
+                            </div>             
+                        </div>
+
+                    </div>
+                    
+                    <div class="form">
+                        <div class="container">
+                            <h2 class="form__title">ЗАЛИШІТЬ ЗАЯВКУ</h2>
+                            <p class="form__subtitle">та отримайте консультацію</p>
+                            <form class="form-block" action="">
+                                <select name="quantity" id="quantity" class="input">
+                                    <option value="" disabled selected>
+                                         Оберіть кількість (шт.)
+                                    </option>
+                                    <option value="one">1 шт = <b class="price">999</b> грн</option>
+                                    <option value="two">2 шт = <b class="pst2">999</b> грн (знижка -50грн)</option>
+                                    <option value="three">3 шт = <b class="pst3">999</b> грн (знижка -100грн)</option>
+                                    <option value="four">4 шт = <b class="pst4">999</b> грн (знижка -150грн)</option>
+                                </select>
+
+                                <input type="text" name="name" class="name input" placeholder="Введіть ваше ім'я">
+
+                                <input type="tel" name="phone" class="phone input" placeholder="Введіть ваш телефон">  
+
+                                <button class="btn">Замовити зараз</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
 
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__delivery">
+                        <div class="footer__delivery-up">
+                            <div class="footer__delivery-left">
+                                <img src="./img/nova.png" alt="">
+                            </div>
+                            <div class="footer__delivery-right">
+                                <img src="./img/privat.png" alt="">
+                            </div>
+                        </div>
+                       
+                        <div class="footer__delivery-down">
+                            <img src="./img/mono.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="footer__text">
+                        <p class="market-trade">"Офіційний дистриб'ютор на території України" Політика конфіденційності</p>
+                        <p class="privacy">Всі права захищено © 2023</p>
+                        <div class="footer__icons">
+                            <img src="./img/apple.svg" alt="">
+                            <img src="./img/visa.svg" alt="">
+                            <img src="./img/master.svg" alt="">
+                            <img src="./img/paypal.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     
     <script src="./js/App.js" type="module"></script>

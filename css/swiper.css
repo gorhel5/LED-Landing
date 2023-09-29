@@ -5,7 +5,8 @@
     color: var(--accent-dark);
 }
 
-.swiper-miniature{
+.swiper-miniature,
+.swiper-miniature-2{
     padding: 0px 5px 0;
     background-color: var(--page-bg);
 }
@@ -14,6 +15,7 @@
     opacity: 0.4;
 }
 
-.swiper-miniature .swiper-slide-thumb-active {
+.swiper-miniature .swiper-slide-thumb-active,
+.swiper-miniature-2 .swiper-slide-thumb-active {
     opacity: 1;
   }

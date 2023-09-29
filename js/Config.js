@@ -1,4 +1,4 @@
 let DISCOUNT = 50; // Скидка
-let PRICE = 3490; // Обычная цена
+let PRICE = 499; // Обычная цена
 
 export default {DISCOUNT, PRICE};
