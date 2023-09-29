@@ -6,6 +6,10 @@
     --accent-dark: #e89e2c;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Proxima Nova';
     font-weight: 400;
@@ -40,7 +44,7 @@ body {
     background: linear-gradient(180deg, rgba(239,227,86,1) 0%, rgba(239,227,86,1) 1%, rgba(253,174,49,1) 100%);
 
     box-shadow: 0px 3px 0px 0px rgba(220,161,47,1);
-    text-shadow: 0px 2px 0px rgb(239,227,86) ;
+    text-shadow: 0px 2px 0px rgb(239,227,86);
 }
 
 .btn:hover {
@@ -50,6 +54,10 @@ body {
 .btn:active {
     position: relative;
     top: 1px;
+}
+
+.btn a {
+    color: inherit;
 }
 
 .title-2 {
