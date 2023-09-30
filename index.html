@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/swiper.css">
 
+
+    <script src="./js/TelegramSender.js" type="module"></script>
+
 </head>
 <body>
     
@@ -40,9 +43,12 @@
 
                 <div class="header__sliders">
                     <div class="swiper swiper1">
-                        <!-- Additional required wrapper -->
+                       
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
+                           
+                            <div class="swiper-slide">
+                                <img src="./img/new01.jpeg" alt="Slide1">
+                            </div>
                             <div class="swiper-slide">
                                 <img src="./img/01.jpeg" alt="Slide1">
                             </div>
@@ -52,16 +58,11 @@
                             <div class="swiper-slide">
                                 <img src="./img/03.jpeg" alt="Slide1">
                             </div>
-                            
                         </div>
-                       
-                    
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
-                                           
+                        <div class="swiper-button-next"></div>                  
                     </div>
+
                     <div class="header__banner">
                         <div class="container">
                             <div class="header__price">
@@ -81,10 +82,12 @@
                         </div>
                        
                     </div>
+
                     <div class="swiper-miniature">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
+                            <div class="swiper-slide swiper-miniature-slide">
+                                <img src="./img/new01.jpeg" alt="Slide1">
+                            </div>
                             <div class="swiper-slide swiper-miniature-slide">
                                 <img src="./img/01.jpeg" alt="Slide1">
                             </div>
@@ -122,7 +125,7 @@
 
                 <div class="header__button">
                     <div class="container">
-                        <button  class="btn">
+                        <button  class="btn scroll">
                            замовити зі знижкою
                         </button>
                     </div>
@@ -256,7 +259,7 @@
 
             <section class="button">
                 <div class="container">
-                    <button class="btn">
+                    <button class="btn scroll">
                         ЗАМОВИТИ ЗІ ЗНИЖКОЮ
                     </button>
                 </div>
@@ -410,6 +413,9 @@
                         <div class="swiper swiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
+                                    <img src="./img/new01.jpeg" alt="Slide1">
+                                </div>
+                                <div class="swiper-slide">
                                     <img src="./img/01.jpeg" alt="Slide1">
                                 </div>
                                 <div class="swiper-slide">
@@ -442,9 +448,11 @@
                         </div>
 
                         <div class="swiper-miniature-2"  id="scroll" >
-                            <!-- Additional required wrapper -->
+                            
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
+                                <div class="swiper-slide swiper-miniature-slide">
+                                    <img src="./img/new01.jpeg" alt="Slide1">
+                                </div>
                                 <div class="swiper-slide swiper-miniature-slide">
                                     <img src="./img/01.jpeg" alt="Slide1">
                                 </div>
@@ -463,22 +471,23 @@
                         <div class="container">
                             <h2 class="form__title">ЗАЛИШІТЬ ЗАЯВКУ</h2>
                             <p class="form__subtitle">та отримайте консультацію</p>
-                            <form class="form-block" id="form" action="">
-                                <select name="quantity" id="quantity" class="input">
+                            <form class="form-block" >
+
+                                <select name="quantity" id="quantity" class="input" required>
                                     <option class="zero-option" value="" disabled selected>
                                          Оберіть кількість (шт.)
                                     </option>
-                                    <option value="one">1 шт.</option>
-                                    <option value="two">2 шт.</option>
-                                    <option value="three">3 шт.</option>
-                                    <option value="four">4 шт.</option>
+                                    <option value="один">1 шт.</option>
+                                    <option value="два">2 шт.</option>
+                                    <option value="три">3 шт.</option>
+                                    <option value="четыре">4 шт.</option>
                                 </select>
 
-                                <input type="text" name="name" class="name input" placeholder="Введіть ваше ім'я">
+                                <input type="text" name="name" class="name input" placeholder="Введіть ваше ім'я" minlength="2" required>
 
                                 <input type="tel" name="phone" class="phone input" placeholder="Введіть ваш телефон">  
 
-                                <button class="btn">Замовити зараз</button>
+                                <button type="submit" class="btn submit-btn">Замовити зараз</button>
                             </form>
                         </div>
                         
@@ -522,5 +531,6 @@
     </div>
     
     <script src="./js/App.js" type="module"></script>
+    
 </body>
 </html>

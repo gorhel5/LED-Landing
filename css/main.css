@@ -505,10 +505,17 @@ select {
    appearance: none;
    -moz-appearance: none;
    -webkit-appearance: none;
+   
 }
 
 input::placeholder {
     color: var(--text-color);
+}
+
+
+.zero-option {
+   
+    width: 50px;
 }
 
 /* ---------- FOOTER     ---------- */

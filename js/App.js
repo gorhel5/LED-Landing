@@ -1,5 +1,6 @@
 import Slider from './Swiper.js';
 import Price from './Config.js';
+import scrollHandler from './Scroll.js';
 
 const price = document.querySelectorAll('.price'); 
 console.log(price)
@@ -16,6 +17,8 @@ function bannerPrice () {
     pst4.textContent = ( Price.PRICE * 4 ) - Price.DISCOUNT * 3;
 }
 
+
+
 Slider();
 bannerPrice();
-console.log(Price.DISCOUNT)
+scrollHandler();
