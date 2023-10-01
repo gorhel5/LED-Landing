@@ -500,11 +500,11 @@ uah {
 }
 
 select {
-    text-align: center;
-   cursor: pointer;
-   appearance: none;
-   -moz-appearance: none;
-   -webkit-appearance: none;
+    text-align-last: center;
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
    
 }
 

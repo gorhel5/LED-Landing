@@ -4,6 +4,8 @@ const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
 const form = document.querySelector('.form-block');
 
+
+
 form.addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -11,6 +13,15 @@ form.addEventListener('submit', async function(event) {
 
     const formData = new FormData(form);
     const { quantity, name, phone } =  Object.fromEntries(formData.entries())
+
+    // let res = validator.isMobilePhone(phone, 'uk-UA');
+    // console.log(res)
+    // event.preventDefault()
+
+    // if ( res === false) {
+    //     console.log('wrong phone!');
+    //     return false;
+    // }
 
     const text = `*❗️Новый заказ❗️*\n\n_👤 Имя:_ *${name}*\n_⚙️ Количество:_ *${quantity}*\n_📱 Номер телефона:_ *${phone}*`;
 
