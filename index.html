@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="./css/swiper.css">
 
 
-    <script src="./js/TelegramSender.js" type="module"></script>
-
+    
 </head>
 <body>
     
@@ -466,7 +465,7 @@
                             <form class="form-block" >
 
                                 <select name="quantity" id="quantity" class="input" required>
-                                    <option class="zero-option" value="" disabled selected>
+                                    <option class="zero-option " value="" disabled selected>
                                          Оберіть кількість (шт.)
                                     </option>
                                     <option value="один">1 шт.</option>
@@ -475,9 +474,9 @@
                                     <option value="четыре">4 шт.</option>
                                 </select>
 
-                                <input type="text" name="name" class="name input" placeholder="Введіть ваше ім'я" minlength="2" required>
+                                <input type="text" name="name" class="name input" placeholder="Введіть ваше ім'я" minlength="2" >
 
-                                <input type="tel" name="phone" class="phone input" placeholder="Введіть ваш телефон">  
+                                <input type="tel" name="phone" class="phone input " placeholder="Введіть ваш телефон">  
 
                                 <button type="submit" class="btn submit-btn">Замовити зараз</button>
                             </form>
@@ -523,6 +522,8 @@
     </div>
     
     <script src="./js/App.js" type="module"></script>
-    
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/TelegramSender.js" type="module"></script>
+
 </body>
 </html>

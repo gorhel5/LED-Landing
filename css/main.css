@@ -518,6 +518,10 @@ input::placeholder {
     width: 50px;
 }
 
+.error-input {
+    border: 1px solid red;
+}
+
 /* ---------- FOOTER     ---------- */
 
 .footer {
