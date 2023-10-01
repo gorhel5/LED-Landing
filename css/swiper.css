@@ -18,4 +18,8 @@
 .swiper-miniature .swiper-slide-thumb-active,
 .swiper-miniature-2 .swiper-slide-thumb-active {
     opacity: 1;
-  }
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+

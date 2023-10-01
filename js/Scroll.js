@@ -3,7 +3,9 @@ function scrollHandler(e) {
     const form = document.querySelector('.form__title');
     btn.forEach(el => {
         el.addEventListener('click', () => {
-            form.scrollIntoView();
+            form.scrollIntoView({
+                behavior: 'smooth'
+            });
         })
     })
 }

@@ -6,10 +6,6 @@
     --accent-dark: #e89e2c;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Proxima Nova';
     font-weight: 400;
