@@ -1,4 +1,8 @@
+const TELEGRAM_BOT_TOKEN = '6283383746:AAFgnXaRCgS7FFys8nofxZ24dJtTBmveIYM';
+const TELEGRAM_CHAT_ID = '-1001612916388';
+
 let DISCOUNT = 50; // Скидка
 let PRICE = 349; // Обычная цена
 
-export default {DISCOUNT, PRICE};
+
+export default {DISCOUNT, PRICE, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID};
