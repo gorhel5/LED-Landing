@@ -1,5 +1,5 @@
 const TELEGRAM_BOT_TOKEN = '6283383746:AAFgnXaRCgS7FFys8nofxZ24dJtTBmveIYM';
-const TELEGRAM_CHAT_ID = '-1001919395348';
+const TELEGRAM_CHAT_ID = '-4098949116';
 const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
 const form = document.querySelector('.form-block');
